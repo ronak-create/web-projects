@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="star.png">
+    <title>Slotpot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="coin-container">
+      <div class="coin" id="draggable" draggable="true"><img src="./images/dollar-currency-symbol.png" alt=""></div>
+      <div id="turns" class="coin-count">x10</div>
+    </div>
+    <div class="heading">
+      <h1>slotery</h1>
+    </div>
+    <div class="btn-contain">
+      <div id="fake" class="fake-button"></div>
+      <div class="btn-particles"></div>
+    </div>
+    <div id="mute-button" class="mute-button">
+      <img class="speaker-on" src="./images/volume-high-solid.svg" alt="">
+      <img class="speaker-off" src="./images/volume-xmark-solid.svg" alt="">
+    </div>
+    <div class="container">
+      <div class="header">
+        <div class="header-ele chanceboard">
+          <h1>CHANCE:</h1>
+          <div id="chance" class="white-board chance">10</div>
+        </div>
+        <div class="header-ele scoreboard">
+          <h1>SCORE:</h1>
+          <div id="score" class="white-board score">0</div>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="handle">
+          <div class="bobhandle"></div>
+          <div id="bob" class="bob"></div>
+        </div>
+        <div id="slots" class="slots">
+          <div class="slot slot-1" style="--j: 10">
+            <img src="./images/bar-table.png" alt="" />
+            <img src="./images/bell.png" alt="" />
+            <img src="./images/billiard-ball.png" alt="" />
+            <img src="./images/champion.png" alt="" />
+            <img src="./images/cherry.png" alt="" />
+            <img src="./images/club.png" alt="" />
+            <img src="./images/cocktail.png" alt="" />
+            <img src="./images/crown.png" alt="" />
+            <img src="./images/diamond (1).png" alt="" />
+            <img src="./images/diamond.png" alt="" />
+            <img src="./images/dollar-symbol.png" alt="" />
+            <img src="./images/favorite.png" alt="" />
+            <img src="./images/flash.png" alt="" />
+            <img src="./images/grape.png" alt="" />
+            <img src="./images/heart.png" alt="" />
+            <img src="./images/horseshoe.png" alt="" />
+            <img src="./images/lemon.png" alt="" />
+            <img src="./images/palm-leaves.png" alt="" />
+            <img src="./images/question.png" alt="" />
+            <img src="./images/seven.png" alt="" />
+            <img src="./images/spade.png" alt="" />
+            <img src="./images/speed-limit.png" alt="" />
+            <img src="./images/square-dice.png" alt="" />
+            <img src="./images/watermelon.png" alt="" />
+          </div>
+          <div class="slot slot-2" style="--j: 15">
+            <img src="./images/bar-table.png" alt="" />
+            <img src="./images/bell.png" alt="" />
+            <img src="./images/billiard-ball.png" alt="" />
+            <img src="./images/champion.png" alt="" />
+            <img src="./images/cherry.png" alt="" />
+            <img src="./images/club.png" alt="" />
+            <img src="./images/cocktail.png" alt="" />
+            <img src="./images/crown.png" alt="" />
+            <img src="./images/diamond (1).png" alt="" />
+            <img src="./images/diamond.png" alt="" />
+            <img src="./images/dollar-symbol.png" alt="" />
+            <img src="./images/favorite.png" alt="" />
+            <img src="./images/flash.png" alt="" />
+            <img src="./images/grape.png" alt="" />
+            <img src="./images/heart.png" alt="" />
+            <img src="./images/horseshoe.png" alt="" />
+            <img src="./images/lemon.png" alt="" />
+            <img src="./images/palm-leaves.png" alt="" />
+            <img src="./images/question.png" alt="" />
+            <img src="./images/seven.png" alt="" />
+            <img src="./images/spade.png" alt="" />
+            <img src="./images/speed-limit.png" alt="" />
+            <img src="./images/square-dice.png" alt="" />
+            <img src="./images/watermelon.png" alt="" />
+          </div>
+          <div class="slot slot-3" style="--j: 20">
+            <img src="./images/bar-table.png" alt="" />
+            <img src="./images/bell.png" alt="" />
+            <img src="./images/billiard-ball.png" alt="" />
+            <img src="./images/champion.png" alt="" />
+            <img src="./images/cherry.png" alt="" />
+            <img src="./images/club.png" alt="" />
+            <img src="./images/cocktail.png" alt="" />
+            <img src="./images/crown.png" alt="" />
+            <img src="./images/diamond (1).png" alt="" />
+            <img src="./images/diamond.png" alt="" />
+            <img src="./images/dollar-symbol.png" alt="" />
+            <img src="./images/favorite.png" alt="" />
+            <img src="./images/flash.png" alt="" />
+            <img src="./images/grape.png" alt="" />
+            <img src="./images/heart.png" alt="" />
+            <img src="./images/horseshoe.png" alt="" />
+            <img src="./images/lemon.png" alt="" />
+            <img src="./images/palm-leaves.png" alt="" />
+            <img src="./images/question.png" alt="" />
+            <img src="./images/seven.png" alt="" />
+            <img src="./images/spade.png" alt="" />
+            <img src="./images/speed-limit.png" alt="" />
+            <img src="./images/square-dice.png" alt="" />
+            <img src="./images/watermelon.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="coinslot" id="dropzone">
+          <div class="slot"></div>
+        </div>
+        <div id="coin-in" class="coin-in"><audio src="coin-drop-89601.mp3" id="coin-insert"></audio></div>
+        <audio src="click-button-140881.mp3" id="clicksound" loop></audio>
+        <audio src="winning-82808.mp3" id="won"></audio>
+        <div id="push" class="push"></div>
+        <div class="display-b">
+          <h1 id="display"></h1>
+          <img id="rough-glass" src="./images/display.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script type="module" defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyB9hPEHqx79tqEQv_-I_jc8BSa57M9rKLU",
+        authDomain: "windows-11-clone.firebaseapp.com",
+        projectId: "windows-11-clone",
+        storageBucket: "windows-11-clone.appspot.com",
+        messagingSenderId: "486909622485",
+        appId: "1:486909622485:web:c13cdf69faea4d4e494a5c",
+        measurementId: "G-SZ3XY741F0",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script> -->
+  </body>
+</html>
