@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qr Code Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <h1>Qr Code generator</h1>
+    <div class="container">
+      <p>Enter you text here to store into the qr code.</p>
+      <div class="input-box" id="inp-box">
+        <input
+          type="text"
+          placeholder="Hello World"
+          name="info"
+          class="info"
+          id="info"
+        />
+        <button
+          name="generate"
+          id="generate"
+          class="generate"
+          type="submit"
+          onclick="submit()"
+        >
+          Generate
+        </button>
+        <button class="download" id="downaload" onclick="downlaod()" >
+          Downlaod
+        </button>
+      </div>
+      <div id="qr-code"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script type="text/javascript">
+      const empty = document.getElementById("qr-code");
+      const qrcode = new QRCode("qr-code", "Hello World!");
+      function submit() {
+        const information = document.getElementById("info").value;
+        if (information == "") {
+          empty.innerHTML = "<h2>Please enter some text</h2>";
+        } else {
+          empty.innerHTML = "";
+          const qrcode = new QRCode("qr-code", information);
+        }
+      }
+      function downlaod() {
+        if (empty.innerHTML == "<h2>Please enter some text</h2>") {
+          alert("No qr code generated!");
+        } else {
+          const canvas = document
+            .getElementById("qr-code")
+            .getElementsByTagName("canvas")[0];
+          const link = document.createElement("a");
+          link.href = canvas.toDataURL("image/png");
+          link.download = "qr_code.png";
+          link.click();
+        }
+      }
+    </script>
+  </body>
+</html>

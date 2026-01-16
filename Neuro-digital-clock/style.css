@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* color: #0f0; */
+  font-family: "Courier New", monospace;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #a19eae, #6d6979);
+  justify-content: center;
+  height: 100vh;
+}
+
+.clock-container {
+  display: flex;
+  gap: 40px;
+}
+
+.colon{
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #dbf4e8;
+}
+
+.digit-wrap {
+  height: 80px;
+  width: 60px;
+  border-radius: 8px;
+}
+
+.digit {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #747484, #65666f);
+  box-shadow: 8px 8px 15px #888990, -8px -8px 13px #e8e9f6;
+}
+
+.digit span {
+  height: 60px;
+  font-size: 22px;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  gap: 40px;
+  transform: translateY(-12px);
+}
+
+.tick {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  scale: 1.3;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, #00000047, #6c6c6c6a);
+  box-shadow: 5px 5px 10px #888990, -3px -3px 10px #e8e9f6, inset 0 0 5px #fff;
+}
+
+.active-digit {
+  color: #00ff88;
+  font-weight: bold;
+  transform: scale(1.3);
+  text-shadow: 0 0 10px #dbf4e8;
+}
+
+.digit span {
+  transition: all 0.3s ease-in-out;
+}

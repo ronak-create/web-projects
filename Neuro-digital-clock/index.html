@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrolling Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="clock-container">
+      <div class="digit-wrap"><div class="digit" id="digit-0"></div></div>
+      <div class="digit-wrap"><div class="digit" id="digit-1"></div></div>
+      <div class="colon">:</div>
+      <div class="digit-wrap"><div class="digit" id="digit-2"></div></div>
+      <div class="digit-wrap"><div class="digit" id="digit-3"></div></div>
+      <div class="colon">:</div>
+      <div class="digit-wrap"><div class="digit" id="digit-4"></div></div>
+      <div class="digit-wrap"><div class="digit" id="digit-5"></div></div>
+    </div>
+    <div class="overlay">
+      <div class="tick"></div>
+      <div class="tick"></div>
+      <div class="colon">:</div>
+      <div class="tick"></div>
+      <div class="tick"></div>
+      <div class="colon">:</div>
+      <div class="tick"></div>
+      <div class="tick"></div>
+    </div>
+    <script>
+      const DIGIT_HEIGHT = 60;
+
+      const digitLimits = [3, 10, 6, 10, 6, 10];
+      const digitElements = [];
+
+      for (let i = 0; i < 6; i++) {
+        const container = document.getElementById(`digit-${i}`);
+        for (let j = 0; j < digitLimits[i]; j++) {
+          const span = document.createElement("span");
+          span.textContent = j;
+          container.appendChild(span);
+        }
+        digitElements.push(container);
+      }
+
+      function setDigit(index, value) {
+        const container = digitElements[index];
+        container.style.transform = `translateY(-${value * DIGIT_HEIGHT}px)`;
+
+        [...container.children].forEach((span, i) => {
+          span.classList.toggle("active-digit", i === value);
+        });
+      }
+
+      function updateClock() {
+        const now = new Date();
+        const h = now.getHours().toString().padStart(2, "0");
+        const m = now.getMinutes().toString().padStart(2, "0");
+        const s = now.getSeconds().toString().padStart(2, "0");
+
+        const digits = [...h, ...m, ...s].map(Number);
+        digits.forEach((d, i) => setDigit(i, d));
+      }
+
+      setInterval(updateClock, 1000);
+      updateClock();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    backdrop-filter: blur(5px) grayscale(.5);
+}
+
+.main-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+hr{
+    position: absolute;
+    width: 200px;
+    
+}
+
+.side-bar{
+    display: flex;   
+    justify-self: flex-start;
+    scale: .9;
+    position: fixed;
+    left: 3%;
+}
+
+.side-bar ul{
+    border: 2px solid cyan;
+    padding: 10px;
+}
+
+.side-bar ul li{
+    margin: 5px;
+    list-style: none;
+    border: 2px solid cyan;
+    padding: 7px 10px;
+    width: 200px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.side-bar ul li:hover{
+    scale: 1.1;
+    background: cyan;
+}
+
+.side-bar ul li a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+.side-bar ul li:hover a{
+    color: #000;
+    font-weight: bold;
+}
+
+.side-bar ul li a img{
+    width: 20px;
+    margin: 8px;
+    margin-right: 20px;
+    transition: .3s;
+}
+
+.side-bar ul li:hover a img{
+    scale: 1.2;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 80%;
+    margin: 10px;
+    margin-top: 50px;
+    position: relative; /* Important for the transition effect positioning */
+    overflow: hidden; /* Ensures the transition screen doesn't overflow */
+    /* background-color: rgba(0, 0, 0, 0.3); Optional: slight background to enhance contrast */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Enhance planet container styling to work better with transitions */
+.planets {
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%; /* Changed from 70% to fill the main container */
+    height: 100%; /* Changed from 80% to fill the main container */
+    position: absolute;
+    border: 5px double cyan;
+    transition: opacity 0.3s ease; /* Smooth opacity change when planets switch */
+}
+
+/* Style for the active planet - can be added via JavaScript */
+.planet-active {
+    display: flex;
+    opacity: 1;
+}
+
+.planet-card{
+    width: 30%;
+    height: 80%;
+    border: 3px solid cyan;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.content{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.header{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    padding: 10px;
+    padding-left: 30px;
+    font-family: 'Poppins';
+    /* width: 100%; */
+    background: #0000004c;
+    backdrop-filter: blur(10px);
+}
+
+
+.planet-card img{
+    width: 300px;
+}
+
+.description{
+    font-family: 'Poppins','sans-serif';
+    color: #fff;
+}
+
+.info{
+    width: 97%;
+    height: 30%;
+    border: 3px solid cyan;
+    padding: 2px;
+}
+
+.planet-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.planet-grid div{
+    padding: 0.8px;
+}

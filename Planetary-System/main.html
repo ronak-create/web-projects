@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-body">
+      <div class="header"></div>
+      <div class="side-bar">
+        <ul>
+          <li id="planet-choose" onclick="choosePlanet(this.dataset.planet_name)" data-planet_name="mercury">
+            <a href="#"><img src="mercury.png" alt="" />Mercury</a>
+          </li>
+          <li id="planet-choose" onclick="choosePlanet(this.dataset.planet_name)" data-planet_name="venus">
+            <a href="#"><img src="venus.png" alt="" />Venus</a>
+          </li>
+          <li id="planet-choose" onclick="choosePlanet(this.dataset.planet_name)" data-planet_name="earth">
+            <a href="#"><img src="earth-globe.png" alt="" />Earth</a>
+          </li>
+          <li id="planet-choose" onclick="choosePlanet(this.dataset.planet_name)" data-planet_name="mars">
+            <a href="#"><img src="mars.png" alt="" />Mars</a>
+          </li>
+          <li id="planet-choose" onclick="choosePlanet(this.dataset.planet_name)" data-planet_name="jupiter">
+            <a href="#"><img src="jupiter.png" alt="" />Jupyter</a>
+          </li>
+          <li id="planet-choose" onclick="choosePlanet(this.dataset.planet_name)" data-planet_name="saturn">
+            <a href="#"><img src="saturn.png" alt="" />Saturn</a>
+          </li>
+          <li id="planet-choose" onclick="choosePlanet(this.dataset.planet_name)" data-planet_name="uranus">
+            <a href="#"><img src="uranus.png" alt="" />Uranus</a>
+          </li>
+          <li id="planet-choose" onclick="choosePlanet(this.dataset.planet_name)" data-planet_name="neptune">
+            <a href="#"><img src="neptune.png" alt="" />Neptune</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="mercury planets">
+          <div class="planet-card">
+            <img src="planet-mercury.png" alt="" />
+            <div class="info">
+              <div class="planet-grid">
+                <div><span>🌡️ Avg Temp:</span> 167°C</div>
+                <div><span>☀️ Temp Range:</span> Day: 430°C, Night: -180°C</div>
+                <div><span>🌫️ Atmosphere:</span> Very Thin (O₂, Na)</div>
+                <div><span>🌕 Moons:</span> 0</div>
+                <div><span>🌍 Surface:</span> Rocky, cratered</div>
+                <div><span>🌀 Orbital Period:</span> 88 Earth days</div>
+                <div><span>📏 Diameter:</span> 4,879 km</div>
+                <div><span>⚖️ Gravity:</span> 3.7 m/s²</div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="header">MERCURY</div>
+            <div class="description">
+              <p>
+                Mercury is the first planet from the Sun and the smallest in the
+                Solar System. In English, it is named after the ancient Roman
+                god Mercurius (Mercury), god of commerce and communication, and
+                the messenger of the gods. Mercury is classified as a
+                terrestrial planet, with roughly the same surface gravity as
+                Mars. The surface of Mercury is heavily cratered, as a result of
+                countless impact events that have accumulated over billions of
+                years. Its largest crater, Caloris Planitia, has a diameter of
+                1,550 km (960 mi) and one-third the diameter of the planet
+                (4,880 km or 3,030 mi). Similarly to the Earth's Moon, Mercury's
+                surface displays an expansive rupes system generated from thrust
+                faults and bright ray systems formed by impact event remnants.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="venus planets">
+          <div class="planet-card">
+            <img src="venus-planet.jpg" alt="" />
+            <div class="info">
+              <div class="planet-grid">
+                <div><span>🌡️ Avg Temp:</span> 464°C</div>
+                <div><span>☀️ Temp Range:</span> 462°C</div>
+                <div><span>🌫️ Atmosphere:</span> CO₂, N₂, H₂SO₄ clouds</div>
+                <div><span>🌕 Moons:</span> 0</div>
+                <div><span>🌍 Surface:</span> Rocky, volcanic</div>
+                <div><span>🌀 Orbital Period:</span> 225 Earth days</div>
+                <div><span>📏 Diameter:</span> 12,104 km</div>
+                <div><span>⚖️ Gravity:</span> 8.87 m/s²</div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="content">
+            <div class="header">VENUS</div>
+            <div class="description">
+              <p>
+                Venus is the second planet from the Sun. It is a terrestrial
+                planet and is the closest in mass and size to its orbital
+                neighbour Earth. Venus is notable for having the densest
+                atmosphere of the terrestrial planets, composed mostly of carbon
+                dioxide with a thick, global sulfuric acid cloud cover. At the
+                surface it has a mean temperature of 737 K (464 °C; 867 °F) and
+                a pressure of 92 times that of Earth's at sea level. These
+                extreme conditions compress carbon dioxide into a supercritical
+                state close to Venus's surface.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="earth planets">
+          <div class="planet-card">
+            <img src="eart-planet.jpeg" alt="" />
+            <div class="info">
+              <div class="planet-grid">
+                <div><span>🌡️ Avg Temp:</span> 15°C</div>
+                <div><span>☀️ Temp Range:</span> -88°C to 58°C</div>
+                <div><span>🌫️ Atmosphere:</span> N₂, O₂</div>
+                <div><span>🌕 Moons:</span> 1</div>
+                <div><span>🌍 Surface:</span> Land, water</div>
+                <div><span>🌀 Orbital Period:</span> 365.25 days</div>
+                <div><span>📏 Diameter:</span> 12,742 km</div>
+                <div><span>⚖️ Gravity:</span> 9.8 m/s²</div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="content">
+            <div class="header">EARTH</div>
+            <div class="description">
+              <p>
+                Earth is the third planet from the Sun and the only astronomical
+                object known to harbor life. This is enabled by Earth being a
+                water world, the only one in the Solar System sustaining liquid
+                surface water. Almost all of Earth's water is contained in its
+                global ocean, covering 70.8% of Earth's crust. The remaining
+                29.2% of Earth's crust is land, most of which is located in the
+                form of continental landmasses within Earth's land hemisphere.
+                Most of Earth's land is somewhat humid and covered by
+                vegetation, while large sheets of ice at Earth's polar deserts
+                retain more water than Earth's groundwater, lakes, rivers and
+                atmospheric water combined. Earth's crust consists of slowly
+                moving tectonic plates, which interact to produce mountain
+                ranges, volcanoes, and earthquakes. Earth has a liquid outer
+                core that generates a magnetosphere capable of deflecting most
+                of the destructive solar winds and cosmic radiation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mars planets">
+          <div class="planet-card">
+            <img src="planet-mars.jpg" alt="" />
+            <div class="info">
+              <div class="planet-grid">
+                <div><span>🌡️ Avg Temp:</span> -60°C</div>
+                <div><span>☀️ Temp Range:</span> 20°C / -125°C</div>
+                <div><span>🌫️ Atmosphere:</span> Thin CO₂</div>
+                <div><span>🌕 Moons:</span> 2 (Phobos & Deimos)</div>
+                <div><span>🌍 Surface:</span> Rocky, dusty</div>
+                <div><span>🌀 Orbital Period:</span> 687 Earth days</div>
+                <div><span>📏 Diameter:</span> 6,779 km</div>
+                <div><span>⚖️ Gravity:</span> 3.71 m/s²</div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="content">
+            <div class="header">MARS</div>
+            <div class="description">
+              <p>
+                Mars is the fourth planet from the Sun. The surface of Mars is
+                orange-red because it is covered in iron(III) oxide dust, giving
+                it the nickname "the Red Planet".Mars is among the
+                brightest objects in Earth's sky and its high-contrast albedo
+                features have made it a common subject for telescope viewing. It
+                is classified as a terrestrial planet and is the second smallest
+                of the Solar System's planets with a diameter of 6,779 km (4,212
+                mi). In terms of orbital motion, a Martian solar day (sol) is
+                equal to 24.5 hours and a Martian solar year is equal to 1.88
+                Earth years (687 Earth days). Mars has two natural satellites
+                that are small and irregular in shape: Phobos and Deimos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="jupiter planets">
+          <div class="planet-card">
+            <img src="jupiter-planet.jpeg" alt="" />
+            <div class="info">
+              <div class="planet-grid">
+                <div><span>🌡️ Avg Temp:</span> -145°C</div>
+                <div><span>☀️ Temp Range:</span> Deep clouds hotter</div>
+                <div><span>🌫️ Atmosphere:</span> H₂, He</div>
+                <div><span>🌕 Moons:</span> 95+</div>
+                <div><span>🌍 Surface:</span> Gas giant (no solid surface)</div>
+                <div><span>🌀 Orbital Period:</span> 11.9 Earth years</div>
+                <div><span>📏 Diameter:</span> 139,820 km</div>
+                <div><span>⚖️ Gravity:</span> 24.79 m/s²</div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="content">
+            <div class="header">JUPITER</div>
+            <div class="description">
+              <p>
+                Jupiter is the fifth planet from the Sun and the largest in the
+                Solar System. A gas giant, Jupiter's mass is more than two and a
+                half times that of all the other planets in the Solar System
+                combined and slightly less than one one-thousandth the mass of
+                the Sun. Jupiter orbits the Sun at a distance of 5.20 AU (778.5
+                Gm) with an orbital period of 11.86 years. It is the third
+                brightest natural object in the Earth's night sky after the Moon
+                and Venus and has been observed since prehistoric times. Its
+                name derives from Jupiter, the chief deity of ancient Roman
+                religion.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="saturn planets">
+          <div class="planet-card">
+            <img src="planet-saturn.webp" alt="" />
+            <div class="info">
+              <div class="planet-grid">
+                <div><span>🌡️ Avg Temp:</span> -178°C</div>
+                <div><span>☀️ Temp Range:</span> Slight variation</div>
+                <div><span>🌫️ Atmosphere:</span> H₂, He</div>
+                <div><span>🌕 Moons:</span> 145+</div>
+                <div><span>🌍 Surface:</span> Gas giant with rings</div>
+                <div><span>🌀 Orbital Period:</span> 29.5 Earth years</div>
+                <div><span>📏 Diameter:</span> 116,460 km</div>
+                <div><span>⚖️ Gravity:</span> 10.44 m/s²</div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="content">
+            <div class="header">SATURN</div>
+            <div class="description">
+              <p>
+                Saturn is the sixth planet from the Sun and the second-largest
+                in the Solar System, after Jupiter. It is a gas giant with an
+                average radius of about nine-and-a-half times that of
+                Earth.It has only one-eighth the average density of
+                Earth, but is over 95 times more massive.Even
+                though Saturn is nearly the size of Jupiter, Saturn has less
+                than one-third of Jupiter's mass. Saturn orbits the Sun at a
+                distance of 9.59 AU (1,434 million km) with an orbital period of
+                29.45 years.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="uranus planets">
+          <div class="planet-card">
+            <img src="planet-uranus.jpg" alt="" />
+            <div class="info">
+              <div class="planet-grid">
+                <div><span>🌡️ Avg Temp:</span> -224°C</div>
+                <div><span>☀️ Temp Range:</span> Very minimal change</div>
+                <div><span>🌫️ Atmosphere:</span> H₂, He, CH₄</div>
+                <div><span>🌕 Moons:</span> 27</div>
+                <div><span>🌍 Surface:</span> Ice giant</div>
+                <div><span>🌀 Orbital Period:</span> 84 Earth years</div>
+                <div><span>📏 Diameter:</span> 50,724 km</div>
+                <div><span>⚖️ Gravity:</span> 8.69 m/s²</div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="content">
+            <div class="header">URANUS</div>
+            <div class="description">
+              <p>
+                Uranus is the seventh planet from the Sun. It is a gaseous
+                cyan-coloured ice giant. Most of the planet is made of water,
+                ammonia, and methane in a supercritical phase of matter, which
+                in astronomy is called 'ice' or volatiles. The planet's
+                atmosphere has a complex layered cloud structure and has the
+                lowest minimum temperature of 49 K (−224 °C; −371 °F) out of all
+                the Solar System's planets. It has a marked axial tilt of 82.23°
+                with a retrograde rotation period of 17 hours and 14 minutes.
+                This means that in an 84-Earth-year orbital period around the
+                Sun, its poles get around 42 years of continuous sunlight,
+                followed by 42 years of continuous darkness.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="neptune planets">
+          <div class="planet-card">
+            <img src="neptune-planet.jpg" alt="" />
+            <div class="info">
+              <div class="planet-grid">
+                <div><span>🌡️ Avg Temp:</span> -214°C</div>
+                <div><span>☀️ Temp Range:</span> Slight variation</div>
+                <div><span>🌫️ Atmosphere:</span> H₂, He, CH₄</div>
+                <div><span>🌕 Moons:</span> 14</div>
+                <div><span>🌍 Surface:</span> Ice giant</div>
+                <div><span>🌀 Orbital Period:</span> 165 Earth years</div>
+                <div><span>📏 Diameter:</span> 49,244 km</div>
+                <div><span>⚖️ Gravity:</span> 11.15 m/s²</div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="content">
+            <div class="header">NEPTUNE</div>
+            <div class="description">
+              <p>
+                Neptune is the eighth and farthest known planet from the Sun. It
+                is the fourth-largest planet in the Solar System by diameter,
+                the third-most-massive planet, and the densest giant planet. It
+                is 17 times the mass of Earth, and slightly more massive than
+                fellow ice giant Uranus. Neptune is denser and physically
+                smaller than Uranus because its greater mass causes more
+                gravitational compression of its atmosphere. Being composed
+                primarily of gases and liquids, it has no well-defined solid
+                surface. The planet orbits the Sun once every 164.8 years at an
+                orbital distance of 30.1 astronomical units (4.5 billion
+                kilometres; 2.8 billion miles). It is named after the Roman god
+                of the sea and has the astronomical symbol ♆, representing
+                Neptune's trident.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
